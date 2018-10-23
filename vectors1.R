@@ -67,13 +67,14 @@ floor(x6)
 ceiling(x6)
 trunc(x6)
 round(x6,digits=2)  #round to decimal places
-signif(x6,digits=3)  #round to specified no of digits
+signif(x6,digits=4)  #round to specified no of digits
 
 # Basic operations on vector----
 x1
-sum(x1)
-cumsum(x1) # cumulative sum
+sum(x1)#sum of all the elements of vector
+cumsum(x1) #sequential cumulative sum
 cumprod(x1)
+?cumprod #sequential product of elements of vector
 x1 * 2  # multiple by 2
 x1 * c(2,4) #multiple 2 & 4 alternatively
 x1
@@ -81,9 +82,12 @@ x1
 x1/2
 x1 ^ 2
 x1 ** 2
-x1 %% 2
+x1 %% 3 #remainder function
+?'%%'
 sqrt(x1)
 sin(x1)
+
+#review done till here.#
 
 #concatenate vectors
 x1; x2
