@@ -115,18 +115,30 @@ summary(x1)
 head(x1)
 head(x1,n=3)
 tail(x1)
-
+str(x2)
+#decile 10%, percentile 1%
+?seq
 
 #missing values in vector (NA)----
 (x9 = c(1,5,14,NA,20,17, NA,9))
 sum(x9) #error
-is.na(x9) #T & F 
+is.na(x9) #T & F #to find if value is missing
 #how many missing values
+sum(c(T,F,T))#t=1,f=0
 sum(is.na(x9))
 sum(x9, na.rm=T)
+y1=sample(1:100)
+y1
+y1[c(30,50,78)]=NA
+y1
+anyNA(y1)#any missing value
+sum(is.na(y1))
+?na.rm=T
+#start from here
 na.omit(x9)
 na.exclude(x9)
 #impute
+mean(x9,na.rm=T)
 x9[is.na(x9)] = mean(x9, na.rm=T)
 x9
 
@@ -134,9 +146,14 @@ x9
 class(x1)
 (x11 = c(10.4, 12.4, 15, 20)) #numeric
 class(x11)
+(x11b = c(10, 12, 15, 20))
+class(x11a)
+x11a= as.integer(x11b)#converts datatype
 (x12 = c(3L,6L,9L, 15L)) #integer
 class(x12)
 
+
+#not done, needs revision
 #character----
 (x13 = c('henry', 'harvin', 'education'))
 class(x13)
